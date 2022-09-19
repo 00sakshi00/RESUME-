@@ -1,0 +1,474 @@
+body{
+	margin-top: 5vh;
+	margin-left: 7vw;
+	margin-right: 7vw;
+	border: 3px solid black;
+	border-radius: 10px;
+	scroll-behavior: smooth;
+	text-overflow: hidden;
+}
+
+                                         /* body header */
+
+#body-header{
+	height: 80vh;
+	background-image: url(assets/bckimg.jpg);
+	opacity: 0.6;
+	padding-top: 20px ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.section-heading{
+	width: auto;
+	padding: 20px 10px 10px;
+	font-weight: bolder;
+	font-size: 40px;
+}
+
+.section-heading span{
+	height: auto;
+	width: auto;
+	text-shadow: 2px 2px 4px #000000;
+	display: inline-block;
+	padding-top: 10px ;
+	margin-right: 1rem;
+}
+
+                                           /* horizontal list */
+
+li{
+	display: inline-block;
+	margin: 20px;
+}
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li a{
+    color: white;
+	text-decoration: none;
+	font-size: 25px;
+	transition: color 1s, border-bottom 3s ;
+}
+
+.horizontal-list li a:hover{
+    color: gray;
+	border-bottom:2px solid white;
+}
+
+.text-center{
+	text-align: center;
+}
+
+                                            /* name */
+#name{
+	font-size: 5vw;
+	color: white;
+	font-family: cursive;
+	font-weight: bolder;
+	margin-top: 10vh;
+	text-shadow:  2px 3px 6px lime;
+}
+
+#btech{
+	font-size: 2vw;
+	color: white;
+}
+
+                                              /* social icons links */                                             
+
+.social-icons li a i{
+	color: white;
+	padding: 6px;
+	font-size: 1.5rem;
+	border-radius: 50%;
+	transition: box-shadow 0.5s;
+}
+
+.social-icons li a i:hover{
+	box-shadow: 0px 0px 8px 6px white;
+}
+
+#linkedin{
+	background-color: whitesmoke;
+	color: darkblue;
+}
+#twitter{
+	background-color: whitesmoke;
+	color: rgb(29,161,242);
+}
+#github{
+	background-color: whitesmoke;
+	color: black;
+}
+#pinterest{
+	background-color: whitesmoke;
+	color: red;
+}
+#instagram{
+	background-image: linear-gradient(#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+}
+
+                                                /* about */
+
+#about{
+	height: auto;
+	width: 100%;
+	position: relative;
+}
+#photo{
+	height: 27%;
+	width: 27%;
+	margin-bottom: 5%;
+}
+#photo img{
+	height: 100%;
+	width: 100%;
+	border: 3px dotted white;
+	box-shadow: 0px 0px 3px 4px ghostwhite;
+	border-radius:50%;
+	margin-top: -40%;
+	margin-bottom: 20px;
+}
+#about p{
+	margin-top: -30px;
+	margin-right: 10vw;
+	margin-left: 10vw;
+	font-size: 25px;
+	margin-bottom: 3%;
+}
+
+                        /*sections*/
+
+section{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section:nth-child(2n){
+	background-color: #eeeeee;
+}
+section:nth-child(2n+1){
+	background-color: white ;
+} 
+                        /* skills */ 
+
+.skills-display{
+   width: 70%;
+   height: auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-bottom: 70px;
+}
+
+.parent {
+    width: auto;
+    min-width: 10rem;
+    height: 2rem;
+    border-radius: 0.8rem;
+    margin: 15px;
+    box-shadow: 6px 10px #888888;
+    transition: text 0.5s, padding-top 0.5s, padding-bottom 0.5s;
+    /*border: 2px solid black;*/
+}
+
+.skills-display div:nth-child(1),.skills-display div:nth-child(4),.skills-display div:nth-child(7),.skills-display div:nth-child(10){
+	background-color: blue;
+}
+
+.skills-display div:nth-child(2),.skills-display div:nth-child(5),.skills-display div:nth-child(8),.skills-display div:nth-child(11){
+	background-color: orange;
+}
+
+.skills-display div:nth-child(3),.skills-display div:nth-child(6),.skills-display div:nth-child(9){
+	background-color: limegreen;
+}
+
+.parent span{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.parent:hover{
+	text-shadow: 2px 2px 4px black;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+}
+
+                            /*contact*/
+#contact{
+	background: linear-gradient(45deg, blue, transparent,#2857a4);
+}
+
+#contact-info{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between;
+   word-wrap: break-word;
+}
+
+#user{
+	height: auto;
+	width: 40%;
+	margin-left: 5%;
+	margin-top: 1%;
+	margin-bottom: 5%;
+}   
+input{
+	width:100%;
+	padding:10px;
+	background:none;
+	outline:none;
+	font-size: 20px;
+	border:0;
+	font-family:sans-serif;
+	transition:all .3s;
+	margin-bottom: 10px;
+	border-bottom:2px solid #8f919c;
+}    
+input:focus{
+  border-bottom:3px solid #78788c
+}       
+
+button{
+  float:right;
+  margin-top: 10px;
+  padding:8px 12px;
+  font-size: 20px;
+  margin:8px 0 0;
+  font-family: sans-serif;
+  border:2px solid #bbdefb;
+  background:0;
+  border-radius: 5px;
+  color:#1a237e;
+  cursor:pointer;
+  transition:all .5s
+}
+button:hover{
+	background:#78788c;
+	padding: 10px 15px;
+	color:#fff
+}
+
+#my{
+	margin-top: 1%;
+	height: auto;
+	width: 40%;
+	font-size: 20px;
+} 
+
+#my div{
+	margin: 20px;
+}
+  
+                       /* education */
+
+.timeline {
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+   /* border: 3px solid black; */
+}
+
+.timeline-box {
+    position: relative;
+    margin: 5px;
+    width: 35%;
+    left: 10%;
+    min-height: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+        background-image: linear-gradient(140deg, #EADEDB 0%, #b3e5fc 50%, #42a5f5 75%);
+        box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline-box div{
+	width: 50%;
+
+}
+
+.timeline-box:nth-child(2n) {
+    left: 55%;
+    background-image: linear-gradient(-140deg, #EADEDB 0%, #b3e5fc 50%, #42a5f5 75%);
+}
+
+.timeline-box:nth-child(2n+1)::after{
+	content: '';
+	border-radius: 50%;
+	position: absolute;
+	top: 22%;
+	right: -15%;
+	width: 1rem;
+	height: 1rem;
+	background-color: #64696c;
+}
+.timeline-box:nth-child(2n)::after{
+	content: '';
+	border-radius: 50%;
+	position: absolute;
+	top: 22%;
+	left: -18%;
+	width: 1rem;
+	height: 1rem;
+	background-color: #64696c;
+	transition: box-shadow 2s;
+}
+
+.timeline-box:hover
+{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.timeline-divider {
+    position: absolute;
+    height: 80%;
+    width: 0;
+    border: 3px dashed black;
+    top: 7%;
+    bottom: 10%;
+    left: 50%;
+}
+
+
+.timeline-traveller{
+    position: sticky;
+    top: 16%;
+    margin-left: -9px;
+}
+
+#edu p{
+    display: block;
+}
+
+#psit{
+	background-image: url(assets/psit.jpg);
+	height: auto;
+	width: 30%;
+	background-size: contain;
+	background-repeat: no-repeat;
+    margin: 20px;
+}
+
+#school{
+	background-image: url(assets/school.jpg);
+	height: auto;
+	width: 30%;
+	background-size: contain;
+	background-repeat: no-repeat;
+    margin: 20px;
+}
+
+#course{
+	margin-top: 20px;
+    font-family: fantasy;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: -10px;
+    color: #37474f;
+}
+#college{
+    font-family: fantasy;
+}
+#year{
+    font-family: sans-serif;
+}
+
+
+                      /*responsive*/
+
+
+           /*education*/  
+
+@media screen and (max-width: 600px){
+
+	.timeline-divider{
+		left: 5%;
+	}
+	.timeline-box{
+		left: 12% !important;
+		width: 80%;
+		margin-bottom: 5%;
+	}
+/*	.timeline-box:nth-child(2n) {
+    left: 12%;
+    margin-bottom: 5%;   
+    }
+ 
+    .timeline-box:nth-child(2n)::after{
+    	left: -13%;
+    }
+    .timeline-box:nth-child(2n+1)::after{
+    	left: -13%;
+    }       */
+
+    .timeline-box::after{
+    	left: -12% !important;
+    }
+
+}
+
+
+
+@media screen and (max-width: 600px){
+
+    #photo{
+    	height: 50%;
+	    width: 50%;
+    }
+	#photo img{
+		width: 100%;
+		height: 100%;
+	}
+
+	#name{
+		font-size: 9vw;
+		margin-top: 10%;
+		text-align: center;
+	}
+
+	.social-icons li {
+		margin: 10px;
+	}
+
+	.social-icons li a i{
+		font-size: 1.2rem;
+	}
+
+	#about p{
+		font-size: 1.2em;
+	}
+
+	#body-header{
+		height: 60vh;
+	}
+
+	.horizontal-list li a{
+		font-size: 0px;
+	}
+
+	#btech{
+		font-size: 5vw;
+	}
+
+}             
